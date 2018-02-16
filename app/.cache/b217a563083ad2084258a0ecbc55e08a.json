@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"console.log('router - test');","map":{"mappings":[{"source":"scripts/router.js","original":{"line":1,"column":0},"generated":{"line":1,"column":0}}],"sources":{"scripts/router.js":"console.log('router - test');"},"lineCount":1}},"hash":"70f29d0748a684da5d8002c080e7c875","cacheData":{"env":{}}}

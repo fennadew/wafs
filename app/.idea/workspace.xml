@@ -47,9 +47,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="446" />
     <option name="y" value="152" />
@@ -165,12 +162,12 @@
       <workItem from="1517998156111" duration="516000" />
       <workItem from="1517999360223" duration="668000" />
       <workItem from="1518000131284" duration="6402000" />
-      <workItem from="1518787444907" duration="610000" />
+      <workItem from="1518787444907" duration="677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8196000" />
+    <option name="totallyTimeSpent" value="8263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="446" y="152" width="1218" height="894" extended-state="0" />
