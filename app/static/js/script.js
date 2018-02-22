@@ -3,77 +3,44 @@
     const app = {
         init() {
             sections.toggle('home')
-            api.getData()
             routes.init()
         }
     }
 
     // API to request data from meme generator
     const api = {
-        getData(name) {
-            const loadData = new Promise(function(resolve, reject) {
-                const request = new XMLHttpRequest();
-                request.open('GET', 'http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=0&pageSize=12&days=&apiKey=893dfe6c-e0e7-4693-8a9e-5df5de998357', true);
-
-                request.onload = () => {
-                    if (request.status >= 200 && request.status < 400) {
-                        // Success!
-                        const data = JSON.parse(request.responseText);
-                        resolve(data);
-                    } else {
-                        // We reached our target server, but it returned an error
-                        reject(request.error);
-                    }
-                }
-                request.onerror = () => {
-                    // There was a connection error of some sort
-                    console.log("failed to request")
-                };
-
-                request.send();
-            })
-
-
-            loadData.then(data => {
-                //render first three items
-                const memeData = data.result.map((obj) => {
-                    return {
-                        displayName: obj.displayName,
-                        imageUrl: obj.imageUrl,
-                        href: obj.displayName.toLowerCase().replace(/ $/, "").split(' ').join('-')
-                    }
+        apiKey: '893dfe6c-e0e7-4693-8a9e-5df5de998357',
+        randomPageNumber: new Date().getDay(),
+        requestApi(name) {
+            const reqSettings = new Request('http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=' + this.randomPageNumber + '&pageSize=12&days=&apiKey=' + this.apiKey, {
+                method: 'get',
+                headers: new Headers({
+                    'Content-Type': 'text/plain'
                 })
+            });
 
-                if (name) {
-                    const selectedMeme = memeData.filter((obj) => {
-                        return obj.href === name;
-                    })
-                    const directives = {
-                        image: {
-                            src(params) {
-                                return this.imageUrl
-                            }
-                        }
-                    }
-                    Transparency.render(document.getElementById('details'), selectedMeme, directives);
+            const request = async () => {
+                try {
+                    const response = await fetch(reqSettings);
+                    const data = await response.json();
 
-                }
-                else {
-                    const directives = {
-                        displayName: {
-                            // Some names have an space at the end. The replace removes that space so the won't be an extra - at the end of the string when the spaces are replaced with -
-                            href(params) {
-                                return "#populair/" + this.displayName.toLowerCase().replace(/ $/, "").split(' ').join('-');
-                            }
-                        }
+                    collections.all = data.result;
+
+                    if (name) {
+                        content.detailPage(name)
                     }
 
-                    Transparency.render(document.getElementById('memes'), memeData, directives);
+                    else {
+                        content.listPage()
+                    }
+
+                } catch (err) {
+                    console.log(err); // oh noes, we got an error
                 }
 
-            }).catch(error => {
-                console.log(error)
-            })
+            }
+
+            request();
         }
     }
 
@@ -84,14 +51,19 @@
                 '': function () {
                     sections.toggle('home')
                 },
-                'about-me': function () {
-                    sections.toggle('about-me')
+                'memes': function () {
+                    if (collections.all.length === 0) {
+                        api.requestApi()
+                    }
+                    // collections.all.length === 0 ? api.requestApi() : null;
+                    sections.toggle('memes')
                 },
-                'populair': function () {
-                    sections.toggle('populair')
-                },
-                'populair/:name': function (name) {
-                    api.getData(name)
+                'memes/:name': function (name) {
+                    if (collections.all.length === 0) {
+                        api.requestApi(name)
+                    } else {
+                        content.detailPage(name);
+                    }
                     sections.toggle('details')
                 }
             })
@@ -108,6 +80,55 @@
                     el.classList.remove('hidden')
                 }
             })
+        }
+    }
+
+    const content = {
+        listPage() {
+            const directives = {
+                displayName: {
+                    // Some names have a space at the end. The replace removes that space so the won't be an extra - at the end of the string when the spaces are replaced with -
+                    href(params) {
+                        return "#memes/" + this.href;
+                    }
+                }
+            }
+
+            Transparency.render(document.getElementById('memeslist'), collections.map(), directives);
+        },
+        detailPage(name) {
+            const directives = {
+                image: {
+                    src(params) {
+                        return this.imageUrl
+                    }
+                }
+            }
+            Transparency.render(document.getElementById('details'), collections.filter(name), directives);
+
+        }
+
+
+    }
+
+    const collections = {
+        all: [],
+        map() {
+            const memeData = this.all.map((obj) => {
+                return {
+                    displayName: obj.displayName,
+                    imageUrl: obj.imageUrl,
+                    href: obj.displayName.toLowerCase().replace(/ $/, "").split(' ').join('-')
+                }
+            })
+            return memeData
+        },
+        filter(name) {
+            const memeData = this.map()
+            const selectedMeme = memeData.filter((obj) => {
+                return obj.href === name;
+            })
+            return selectedMeme
         }
     }
 

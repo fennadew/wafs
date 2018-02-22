@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
+ ul {
     list-style: none;
 }
 blockquote, q {
@@ -67,27 +67,79 @@ body, nav, section {
     width: 100%;
 }
 
+header {
+    padding: 3em 0 1em;
+    text-align: center;
+}
+
+@keyframes Bganimate {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 200% 0
+    }
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Luckiest Guy', cursive;
+    background: url("../images/color.png");
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: Bganimate 2s linear infinite;
+}
+
 a {
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
     padding: 10px 40px;
 }
 
 nav li a {
     line-height: 44px;
-    color: #000;
+    color: #222;
     margin-right: 20px;
 }
 
+section ol {
+    list-style-position: inside;
+}
+
+section li {
+    margin: 0.5em auto 0;
+    font-size: 2em;
+    color: #FF005C;
+    text-align: center;
+}
+
+section a {
+    width: 100%;
+    display: block;
+    color: #FF005C;
+    font-size: 0.5em;
+}
+
+section#memes {
+    padding-top: 1em;
+}
+
 section:nth-of-type(odd){
-    background-color: aqua;
+    background-color: #FFEA00;
 }
 
 section:nth-of-type(even) {
-    background-color: pink;
+    background-color: #FFEA00;
 }
 
 section.hidden {
