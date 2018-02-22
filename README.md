@@ -46,3 +46,8 @@ Bronnen:
 ## Code reviews week 2
 1. Mo https://github.com/moniac/wafs/pull/6
 2. Mees https://github.com/meesrutten/wafs/pull/3
+
+
+
+## Bronnen website
+regenboog: https://img00.deviantart.net/a956/i/2012/222/5/5/hot_pink_to_yellow_by_ohsnapjenny-d5an2b7.jpg
