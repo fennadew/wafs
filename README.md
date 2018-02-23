@@ -1,7 +1,7 @@
 # wafs
 The course repo for 'Web App From Scratch'
 
-[Link to website](https://fennadew.github.io/wafs/app/index.html)
+[Link to website](http://fennadewilde.nl/wafs/app/index.html)
 
 
 ## The SPA (Single Page Application)
@@ -30,6 +30,7 @@ I used the default for pageSize and have a variable for the pageIndex based on t
 - Write functions in arrow functions, except methods
 - Don't repeat yourself
 - Write code comments
+- Don't use semicolons
 
 ## Wishlist
 - Remove & add elements to the DOM instead of toggle them with display none in CSS
