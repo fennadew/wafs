@@ -36,6 +36,7 @@ I used the default for pageSize and have a variable for the pageIndex based on t
 - More content on the website
 - More transitions and effects
 - Search meme's
+- Modules
 
 
 ## Actor diagram
