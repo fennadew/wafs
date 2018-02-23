@@ -4,9 +4,8 @@ The course repo for 'Web App From Scratch'
 [Link to website](https://fennadew.github.io/wafs/app/index.html)
 
 
-## The SPA 
-What does your SPA do? Show, don’t (just) tell
-What do others need to know about how it works
+## The SPA (Single Page Application)
+My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
 
 ![Preview of meme](https://github.com/fennadew/wafs/blob/master/app/static/images/cat.png "Preview of meme")
 
@@ -19,7 +18,7 @@ I am using the [Meme Generator API](http://version1.api.memegenerator.net/). I c
 
 And as last you need a APIkey.
 
-I used the default for pageSize and have a variable for the pageIndex based on the day of the week. I did this so everyday of the week there are new meme's to choice from. 
+I used the default for pageSize and have a variable for the pageIndex based on the day of the week. I did this so everyday of the week there are new meme's to choice from. This makes the user want to go back to the SPA everyday!
 
 
 ## Principles
