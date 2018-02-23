@@ -69,7 +69,8 @@
                     } else {
                         content.listPage()
                     }
-                    // collections.all.length === 0 ? api.requestApi() : null;
+
+                    helpers.htmlElement('.sort input').addEventListener('change', content.listPage)
                     sections.toggle('memes')
                 },
                 'memes/:name': function (name) {
@@ -100,7 +101,14 @@
     const content = {
         //  Fills the overview page with content recieved from the API
         listPage() {
-            const directives = {
+            let data;
+            if (helpers.htmlElement('.sort input').checked) {
+                data = collections.sort()
+            } else {
+                data = collections.map()
+            }
+
+                const directives = {
                 displayName: {
                     // Some names have a space at the end. The replace removes that space so the won't be an extra - at the end of the string when the spaces are replaced with -
                     href(params) {
@@ -109,7 +117,7 @@
                 }
             }
 
-            Transparency.render(document.getElementById('memeslist'), collections.map(), directives);
+            Transparency.render(document.getElementById('memeslist'), data, directives);
         },
         //  Fills the detail page with content recieved from the API
         detailPage(name) {
@@ -146,6 +154,15 @@
                 return obj.href === name;
             })
             return selectedMeme
+        },
+        sort() {
+            const memesAlphabetic = this.map()
+            memesAlphabetic.sort((a, b) => {
+                if(a.displayName.toLowerCase() < b.displayName.toLowerCase()) return -1;
+                if(a.displayName.toLowerCase() > b.displayName.toLowerCase()) return 1;
+                return 0;
+            })
+            return memesAlphabetic;
         }
     }
 

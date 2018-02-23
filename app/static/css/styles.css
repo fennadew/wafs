@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1.2;
 }
  ul {
     list-style: none;
@@ -253,6 +253,39 @@ figcaption {
     opacity: 1;
     visibility: visible;
     transition: visibility 0s ease 300ms
+}
+
+.sort {
+    width: 11em;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.sort input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.sort input[type="checkbox"] + label {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 1.5em;
+}
+
+.sort input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #FFF;
+    border: 1px solid #222;
+}
+
+.sort  input[type="checkbox"]:checked + label:before {
+    background-color: #FF005C;
 }
 
 .loader img {
