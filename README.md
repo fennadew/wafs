@@ -11,11 +11,16 @@ What do others need to know about how it works
 ![Preview of meme](https://github.com/fennadew/wafs/blob/master/app/static/images/cat.png "Preview of meme")
 
 ## The API 
-What api are you using, what data(limits) does it have
+I am using the [Meme Generator API](http://version1.api.memegenerator.net/). I call the most populair memes by the method Generators_Select_ByPopular. This returns the most populair memes. The API has different parameters explained on the website.
+- <b>days (optional)</b> The time period for which to filter the result set. ([days] == null) for all time.
+- <b>sessionKey</b> (optional) A logged in user session key. Use MgUser_Login to get a session key.
+- <b>pageIndex</b>	Page index of the requested result set. Defaults to 0 if not specified.
+- <b>pageSize</b>	Page size of the requested result set. Defaults to 12 if not specified.
 
-## Work in progress (features)
-What feature are you still working on
-What principles did you follow
+And as last you need a APIkey.
+
+I used the default for pageSize and have a variable for the pageIndex based on the day of the week. I did this so everyday of the week there are new meme's to choice from. 
+
 
 ## Principles
 - use strict mode
