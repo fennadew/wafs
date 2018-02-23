@@ -17,7 +17,22 @@ What api are you using, what data(limits) does it have
 What feature are you still working on
 What principles did you follow
 
+## Principles
+- use strict mode
+- Write in ES6
+- Write in Object-oriented programming 
+- Don't use var
+- Use const and let
+- Write functions in arrow functions, except methods
+- Don't repeat yourself
+- Write code comments
+
 ## Wishlist
+- Remove & add elements to the DOM instead of toggle them with display none in CSS
+- More content on the website
+- More transitions and effects
+- Search meme's
+
 
 ## Actor diagram
 ![Actor diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/actor-diagram.svg "Actor diagram")
