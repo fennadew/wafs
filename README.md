@@ -4,24 +4,46 @@ The course repo for 'Web App From Scratch'
 [Link to website](https://fennadew.github.io/wafs/app/index.html)
 
 
-## The SPA 
-What does your SPA do? Show, don’t (just) tell
-What do others need to know about how it works
+## The SPA (Single Page Application)
+My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
 
 ![Preview of meme](https://github.com/fennadew/wafs/blob/master/app/static/images/cat.png "Preview of meme")
 
 ## The API 
-What api are you using, what data(limits) does it have
+I am using the [Meme Generator API](http://version1.api.memegenerator.net/). I call the most populair memes by the method Generators_Select_ByPopular. This returns the most populair memes. The API has different parameters explained on the website.
+- <b>days (optional)</b> The time period for which to filter the result set. ([days] == null) for all time.
+- <b>sessionKey</b> (optional) A logged in user session key. Use MgUser_Login to get a session key.
+- <b>pageIndex</b>	Page index of the requested result set. Defaults to 0 if not specified.
+- <b>pageSize</b>	Page size of the requested result set. Defaults to 12 if not specified.
 
-## Work in progress (features)
-What feature are you still working on
-What principles did you follow
+And as last you need a APIkey.
+
+I used the default for pageSize and have a variable for the pageIndex based on the day of the week. I did this so everyday of the week there are new meme's to choice from. This makes the user want to go back to the SPA everyday!
+
+
+## Principles
+- use strict mode
+- Write in ES6
+- Write in Object-oriented programming 
+- Don't use var
+- Use const and let
+- Write functions in arrow functions, except methods
+- Don't repeat yourself
+- Write code comments
 
 ## Wishlist
+- Remove & add elements to the DOM instead of toggle them with display none in CSS
+- More content on the website
+- More transitions and effects
+- Search meme's
+- Modules
+
 
 ## Actor diagram
-![Actor diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/actor-diagram.jpg "Actor diagram")
+![Actor diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/actor-diagram.svg "Actor diagram")
 
+## Flow diagram
+![Flow diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/flow-diagram.svg "Floq diagram")
 
 ## Advantages and disadvantages of JavaScript libraries/frameworks
  ### Advantages
