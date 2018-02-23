@@ -1,6 +1,7 @@
 # wafs
 The course repo for 'Web App From Scratch'
-[Link to website]
+
+[Link to website](https://fennadew.github.io/wafs/app/index.html)
 
 
 ## The SPA 
@@ -59,8 +60,8 @@ Bronnen:
 3. [Stackoverflow](https://stackoverflow.com/questions/21862054/single-page-application-advantages-and-disadvantages)
 
 ## Code reviews week 1
-1. Sam(https://github.com/Senmetsu/wafs/pull/1)
-2. Cas(https://github.com/Casburggraaf/wafs/pull/2)
+1. [Sam](https://github.com/Senmetsu/wafs/pull/1)
+2. [Cas](https://github.com/Casburggraaf/wafs/pull/2)
 
 ## Code reviews week 2
 1. [Mo](https://github.com/moniac/wafs/pull/6)
@@ -74,6 +75,7 @@ Bronnen:
 
 ### libraries 
 [Routie](http://projects.jga.me/routie/)
+
 [Transparency](https://github.com/leonidas/transparency)
 
 ### API
