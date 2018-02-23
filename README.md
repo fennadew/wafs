@@ -8,6 +8,8 @@ The course repo for 'Web App From Scratch'
 What does your SPA do? Show, don’t (just) tell
 What do others need to know about how it works
 
+![Preview of meme](https://github.com/fennadew/wafs/blob/master/app/static/images/cat.png "Preview of meme")
+
 ## The API 
 What api are you using, what data(limits) does it have
 
