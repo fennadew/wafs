@@ -42,6 +42,8 @@ I used the default for pageSize and have a variable for the pageIndex based on t
 ## Actor diagram
 ![Actor diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/actor-diagram.svg "Actor diagram")
 
+## Flow diagram
+![Flow diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/flow-diagram.svg "Floq diagram")
 
 ## Advantages and disadvantages of JavaScript libraries/frameworks
  ### Advantages
