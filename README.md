@@ -59,18 +59,18 @@ Bronnen:
 2. [Tweakers](https://gathering.tweakers.net/forum/list_messages/1613325)
 3. [Stackoverflow](https://stackoverflow.com/questions/21862054/single-page-application-advantages-and-disadvantages)
 
-## Code reviews week 1
+## Code reviews
+### Week 1
 1. [Sam](https://github.com/Senmetsu/wafs/pull/1)
 2. [Cas](https://github.com/Casburggraaf/wafs/pull/2)
 
-## Code reviews week 2
+## Week 2
 1. [Mo](https://github.com/moniac/wafs/pull/6)
 2. [Mees](https://github.com/meesrutten/wafs/pull/3)
 
 
 ## Dependencies
 ### Images
-
 [Rainbow](https://img00.deviantart.net/a956/i/2012/222/5/5/hot_pink_to_yellow_by_ohsnapjenny-d5an2b7.jpg)
 
 ### libraries 
