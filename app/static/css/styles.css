@@ -55,19 +55,44 @@ table {
      GLOBAL
 */
 
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body, html, section  {
+body, html  {
     height: 100%;
+}
+
+section {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+
+main {
+    padding-top: 150px;
+    min-height: 100vh;
+    background-color: #FFEA00;
 }
 
 body, nav, section {
     width: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #FFEA00;
     padding: 3em 0 1em;
     text-align: center;
 }
@@ -130,10 +155,6 @@ section a {
     font-size: 0.5em;
 }
 
-section#memes {
-    padding-top: 1em;
-}
-
 section:nth-of-type(odd){
     background-color: #FFEA00;
 }
@@ -144,4 +165,99 @@ section:nth-of-type(even) {
 
 section.hidden {
     display: none;
+}
+figure {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+figure img {
+    margin: auto;
+    display: block;
+}
+
+figcaption {
+    color: #222;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#home p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+#home span {
+    font-weight: 600;
+}
+@keyframes spinning {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.loader {
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 180px);
+    margin-top: 180px;
+    background-color: #FFEA00;
+    transition: opacity 300ms ease 300ms, visibility 0s ease 600ms;
+}
+
+.error span {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.error {
+    z-index: 2;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 180px);
+    margin-top: 180px;
+    text-align: center;
+    background-color: #FFEA00;
+    transition: opacity 300ms ease 300ms, visibility 0s ease 600ms;
+}
+
+.error p {
+    width: 70%;
+    margin: auto;
+}
+
+.loader.active, .error.active {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s ease 300ms
+}
+
+.loader img {
+    display: block;
+    width: 60px;
+    margin: 50px auto;
+    animation: spinning 1.5s ease-in-out infinite;
 }

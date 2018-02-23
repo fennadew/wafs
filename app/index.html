@@ -12,33 +12,42 @@
 </head>
 <body>
 <header>
-    <h1>Meme generator</h1>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#memes">Memes</a></li>
-    </ul>
-</nav>
+    <h1><a href="#">Daily meme's</a></h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#memes">Memes</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section id="home">
-    <p> bron" https://img00.deviantart.net/a956/i/2012/222/5/5/hot_pink_to_yellow_by_ohsnapjenny-d5an2b7.jpg</p>
+<main>
+    <section id="home">
+        <h1>Hallo!</h1>
+        <p>Op deze webapp worden er op elke dag van de week 12 nieuwe meme's laten zien. <span>Enjoy!</span></p>
+    </section>
 
-</section>
+    <div class="loader">
+        <img src="static/images/loader.svg" alt="loader">
+    </div>
+    <div class="error">
+        <p><span>Whoops!</span> Er is iets mis gegaan met het ophalen van jouw daily portie of memes. Check je internet verbinding of probeer het later nog een keer.</p>
+    </div>
+    <section id="memes">
+        <ol id="memeslist">
+            <li><a data-bind="displayName"></a></li>
+        </ol>
+    </section>
 
-<section id="memes">
-    <ol id="memeslist">
-        <li><a data-bind="displayName"></a></li>
-    </ol>
-</section>
-
-<section id="details">
-    <h1 data-bind="displayName"></h1>
-    <img data-bind="image">
-</section>
-
-<script src="static/js/transparency.min.js"></script>
-<script src="static/js/route.js"></script>
+    <section id="details">
+        <figure>
+            <figcaption data-bind="displayName"></figcaption>
+            <img data-bind="image">
+        </figure>
+    </section>
+</main>
+<script src="static/js/vendors/transparency.min.js"></script>
+<script src="static/js/vendors/route.js"></script>
 <script src="static/js/script.js"></script>
 </body>
 </html>

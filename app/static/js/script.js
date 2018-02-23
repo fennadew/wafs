@@ -1,3 +1,4 @@
+
 (function () {
     'use strict';
     const app = {
@@ -10,9 +11,9 @@
     // API to request data from meme generator
     const api = {
         apiKey: '893dfe6c-e0e7-4693-8a9e-5df5de998357',
-        randomPageNumber: new Date().getDay(),
+        pageNumberByDay: new Date().getDay(),
         requestApi(name) {
-            const reqSettings = new Request('http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=' + this.randomPageNumber + '&pageSize=12&days=&apiKey=' + this.apiKey, {
+            const reqSettings = new Request('http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=' + this.pageNumberByDay + '&pageSize=12&days=&apiKey=' + this.apiKey, {
                 method: 'get',
                 headers: new Headers({
                     'Content-Type': 'text/plain'
@@ -20,11 +21,17 @@
             });
 
             const request = async () => {
+                helpers.htmlElement('.loader').classList.add('active')
                 try {
                     const response = await fetch(reqSettings);
                     const data = await response.json();
 
                     collections.all = data.result;
+                    helpers.htmlElement('.loader').classList.remove('active')
+
+                    if (helpers.htmlElement('.error').classList.contains('active')) {
+                        helpers.htmlElement('.error').classList.remove('active')
+                    }
 
                     if (name) {
                         content.detailPage(name)
@@ -35,7 +42,8 @@
                     }
 
                 } catch (err) {
-                    console.log(err); // oh noes, we got an error
+                    helpers.htmlElement('.loader').classList.remove('active')
+                    helpers.htmlElement('.error').classList.add('active')
                 }
 
             }
@@ -54,6 +62,8 @@
                 'memes': function () {
                     if (collections.all.length === 0) {
                         api.requestApi()
+                    } else {
+                        content.listPage()
                     }
                     // collections.all.length === 0 ? api.requestApi() : null;
                     sections.toggle('memes')
@@ -71,10 +81,9 @@
     }
 
     const sections = {
-        selector: document.querySelectorAll('section'),
         // Shows the section that matches with the route
         toggle(hash) {
-            this.selector.forEach(function (el) {
+            helpers.htmlElements('section').forEach(function (el) {
                 el.classList.add('hidden')
                 if (el.id === hash) {
                     el.classList.remove('hidden')
@@ -129,6 +138,15 @@
                 return obj.href === name;
             })
             return selectedMeme
+        }
+    }
+
+    const helpers = {
+        htmlElement(element) {
+            return document.querySelector(element)
+        },
+        htmlElements(elements) {
+            return document.querySelectorAll(elements)
         }
     }
 
