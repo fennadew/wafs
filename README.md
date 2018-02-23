@@ -17,7 +17,7 @@ What principles did you follow
 ## Wishlist
 
 ## Actor diagram
-![Actor diagram](https://github.com/fennadew/app/static/images/actor-diagram.jpg "Actor diagram")
+![Actor diagram](https://github.com/fennadew/wafs/app/static/images/actor-diagram.jpg "Actor diagram")
 
 
 ## Advantages and disadvantages of JavaScript libraries/frameworks
