@@ -23,11 +23,11 @@ What principles did you follow
 
 ## Advantages and disadvantages of JavaScript libraries/frameworks
  ### Advantages
- - Costs less time.
- - Is behind a whole community where you can make things yourself.
- - Gives you stable structure of code and features.
- - Faster and easier learning curve.
- - Good quality code.
+  - Costs less time.
+  - Is behind a whole community where you can make things yourself.
+  - Gives you stable structure of code and features.
+  - Faster and easier learning curve.
+  - Good quality code.
 
  
  ### Disadvantages
