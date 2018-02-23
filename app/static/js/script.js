@@ -23,6 +23,7 @@
             const request = async () => {
                 helpers.htmlElement('.loader').classList.add('active')
                 try {
+                    // Success handler
                     const response = await fetch(reqSettings);
                     const data = await response.json();
 
@@ -33,15 +34,18 @@
                         helpers.htmlElement('.error').classList.remove('active')
                     }
 
+                    // If name is true, a detail page is requested and will be filled with the content of the API
                     if (name) {
                         content.detailPage(name)
                     }
 
+                    // If name is false, the overview page is requested and will be filled with the content of the API
                     else {
                         content.listPage()
                     }
 
                 } catch (err) {
+                    // Error handler shows message in the DOM that the API request failed
                     helpers.htmlElement('.loader').classList.remove('active')
                     helpers.htmlElement('.error').classList.add('active')
                 }
@@ -60,6 +64,7 @@
                     sections.toggle('home')
                 },
                 'memes': function () {
+                    // Checks if data is already there and if not, do API request
                     if (collections.all.length === 0) {
                         api.requestApi()
                     } else {
@@ -69,6 +74,7 @@
                     sections.toggle('memes')
                 },
                 'memes/:name': function (name) {
+                    // Checks if data is already there and if not, do API request
                     if (collections.all.length === 0) {
                         api.requestApi(name)
                     } else {
@@ -93,6 +99,7 @@
     }
 
     const content = {
+        //  Fills the overview page with content recieved from the API
         listPage() {
             const directives = {
                 displayName: {
@@ -105,6 +112,7 @@
 
             Transparency.render(document.getElementById('memeslist'), collections.map(), directives);
         },
+        //  Fills the detail page with content recieved from the API
         detailPage(name) {
             const directives = {
                 image: {
@@ -121,6 +129,7 @@
     }
 
     const collections = {
+        //  Stores the data from the API
         all: [],
         map() {
             const memeData = this.all.map((obj) => {
