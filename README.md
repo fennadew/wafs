@@ -26,8 +26,8 @@ What principles did you follow
   - Costs less time.
   - Is behind a whole community where you can make things yourself.
   - Gives you stable structure of code and features.
-  - Faster and easier learning curve.
-  - Good quality code.
+  - Faster and easier learning curve.
+  - Good quality code.
 
  
  ### Disadvantages
