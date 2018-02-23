@@ -64,7 +64,7 @@ Bronnen:
 1. [Sam](https://github.com/Senmetsu/wafs/pull/1)
 2. [Cas](https://github.com/Casburggraaf/wafs/pull/2)
 
-## Week 2
+### Week 2
 1. [Mo](https://github.com/moniac/wafs/pull/6)
 2. [Mees](https://github.com/meesrutten/wafs/pull/3)
 
