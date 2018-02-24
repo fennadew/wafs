@@ -1,4 +1,4 @@
-import {sections} from "./sections";
+import {sections} from "./modules/sections";
 import {routes} from "./modules/routes";
 
 (function () {

@@ -2,7 +2,7 @@ import {helpers} from "./helpers";
 import routie from "../vendors/route";
 import {content} from "./content";
 import {api} from "./api";
-import {sections} from "../sections";
+import {sections} from "./sections";
 import {collections} from "./collections";
 
 // Checks the hash location of the website

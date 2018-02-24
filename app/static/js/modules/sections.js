@@ -1,4 +1,4 @@
-import {helpers} from "./modules/helpers";
+import {helpers} from "./helpers";
 
 export const sections = {
     // Shows the section that matches with the route
