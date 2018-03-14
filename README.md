@@ -7,7 +7,7 @@ The course repo for 'Web App From Scratch'
 
 <b>Images</b>
 
-Because I load the images in a templete, I forgot about the alt attribute. I should use the title as an alt attribute for accesibility. There should also be a default background color for the logo title. (used a background clip)
+Because I load the images in a template, I forgot about the alt attribute. I should use the title as an alt attribute for accesibility. There should also be a default background color for the logo title. (used a background clip)
 
 <b>Custom fonts</b>
 
@@ -19,7 +19,8 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 
 <b>Color</b>
 
-The colors have enough contrast and can be seen by color blinds as well. In black and white everything is readable too.
+The colors have enough contrast. Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
+In black and white everything is readable too.
 
 <b>Broadband internet</b>
 
@@ -31,15 +32,25 @@ The websites doesn't use cookies. Cookies are in this case not really needed, be
 
 <b>Local Storage</b>
 
+Doens't use local storage.
+
 <b>Mouse/Trackpad</b>
 
 Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling.
 
+##Accessibility research
+* Images need to have an alt attribute.
+* Tabs work fine, but focus styles can be more pleasurable.
+* If the website gets more content/more complexity in the future, maybe place a skip to content button.
+* Heading is well stuctured.
+* Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
 
 ## Future
 * Request the API server side so it can still work without JS.
 * More "pleasurable" focus styles.
 * Minify CSS and JS.
+* Use local storage with API's.
+
 
 ## The SPA (Single Page Application)
 My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
