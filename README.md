@@ -38,7 +38,7 @@ Doens't use local storage.
 
 Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling.
 
-##Accessibility research
+## Accessibility research
 * Images need to have an alt attribute.
 * Tabs work fine, but focus styles can be more pleasurable.
 * If the website gets more content/more complexity in the future, maybe place a skip to content button.
