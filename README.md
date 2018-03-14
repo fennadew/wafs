@@ -6,26 +6,33 @@ The course repo for 'Web App From Scratch'
 ## Research Progressive Enhancement features
 
 <b>Images</b>
+
 Because I load the images in a templete, I forgot about the alt attribute. I should use the title as an alt attribute for accesibility. There should also be a default background color for the logo title. (used a background clip)
 
 <b>Custom fonts</b>
+
 No icon fonts are used and there is a fallback font used. Works the same without custom fonts.
 
 <b>Javascript</b>
+
 JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages.
 
 <b>Color</b>
+
 The colors have enough contrast and can be seen by color blinds as well. In black and white everything is readable too.
 
 <b>Broadband internet</b>
+
 CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
 
 <b>Cookies</b>
+
 The websites doesn't use cookies. Cookies are in this case not really needed, because you don't need any user data and the content changes everyday. The website is also quit small.
 
 <b>Local Storage</b>
 
 <b>Mouse/Trackpad</b>
+
 Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling.
 
 
