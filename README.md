@@ -40,16 +40,20 @@ Tabbing goed quit easily. It's just not really "pleasurable". Focus elements cou
 
 ## Accessibility research
 * Images need to have an alt attribute.
-* Tabs work fine, but focus styles can be more pleasurable.
 * If the website gets more content/more complexity in the future, maybe place a skip to content button.
 * Heading is well stuctured.
 * Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
+* tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
+![Screen reader](https://github.com/fennadew/wafs/blob/browser-technologies/app/static/images/screenreader.png "Screen reader")
+
+
 
 ## Future
 * Request the API server side so it can still work without JS.
 * More "pleasurable" focus styles.
 * Minify CSS and JS.
 * Use local storage with API's.
+* Use a JS transpiler like Babel so older browsers can read the JS as well.
 
 
 ## The SPA (Single Page Application)
