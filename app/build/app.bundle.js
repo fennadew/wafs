@@ -4120,6 +4120,9 @@ var content = exports.content = {
             image: {
                 src: function src(params) {
                     return this.imageUrl;
+                },
+                alt: function alt(params) {
+                    return this.displayName;
                 }
             }
         };

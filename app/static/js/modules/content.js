@@ -29,12 +29,13 @@ export const content = {
             image: {
                 src(params) {
                     return this.imageUrl
+                },
+                alt(params) {
+                    return this.displayName
                 }
             }
         }
         Transparency.render(document.getElementById('details'), collections.filter(name), directives);
 
     }
-
-
 }
