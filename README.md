@@ -57,8 +57,7 @@ Tabbing goed quit easily. It's just not really "pleasurable". Focus elements cou
 * More "pleasurable" focus styles.
 * Minify CSS and JS.
 * Use local storage with API's.
-* Use a JS transpiler like Babel so older browsers can read the JS as well.
-
+* Make different pages with links when JS is not working
 
 ## The SPA (Single Page Application)
 My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
