@@ -46,9 +46,9 @@ Tabbing goed quit easily. It's just not really "pleasurable". Focus elements cou
 * Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
 ![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
 * Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
-![Device lab 1](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test1.png "SDevice lab 1")
-![Device lab 2](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "SDevice lab 2")
-![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.png "SDevice lab 3")
+![Device lab 1](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test1.jpg "SDevice lab 1")
+![Device lab 2](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.jpg "SDevice lab 2")
+![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.jpg "SDevice lab 3")
 
 
 
