@@ -1,7 +1,7 @@
 # wafs
 The course repo for 'Web App From Scratch'
 
-[Link to website](http://fennadewilde.nl/wafs/app/index.html)
+[Link to website](http://fennadewilde.nl/wafs/index.html)
 
 
 ## The SPA (Single Page Application)
