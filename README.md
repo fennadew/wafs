@@ -24,7 +24,7 @@ In black and white everything is readable too.
 
 <b>Broadband internet</b>
 
-CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
+Tested in chrome with slow 3G. Loader should be there already, not added with JS. CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
 
 <b>Cookies</b>
 
@@ -51,6 +51,9 @@ Tabbing goed quit easily. It's just not really "pleasurable". Focus elements cou
 ![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.JPG "SDevice lab 3")
 
 
+## Changes
+* Used transpiler Babel and Package manager Webpack to transpile JS so it works on older browsers as well.
+* Added alt attributes on the images
 
 ## Future
 * Request the API server side so it can still work without JS.
