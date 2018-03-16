@@ -43,8 +43,12 @@ Tabbing goed quit easily. It's just not really "pleasurable". Focus elements cou
 * If the website gets more content/more complexity in the future, maybe place a skip to content button.
 * Heading is well stuctured.
 * Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
-* tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
-![Screen reader](https://github.com/fennadew/wafs/blob/browser-technologies/app/static/images/screenreader.png "Screen reader")
+* Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
+![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
+* Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
+![Device lab 1](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test1.png "SDevice lab 1")
+![Device lab 2](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "SDevice lab 2")
+![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.png "SDevice lab 3")
 
 
 
