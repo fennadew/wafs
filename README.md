@@ -22,42 +22,43 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 The colors have enough contrast. Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
 In black and white everything is readable too.
 
-<b>Protanopia</b>
+* <b>Protanopia</b>
+
 ![Webapp seen with Protanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor.png "Webapp seen with Protanopia")
 
-<b>Protanomaly</b>
+* <b>Protanomaly</b>
 
 ![Webapp seen with Protanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor2.png "Webapp seen with Protanomaly")
 
-<b>Deuteranopia</b>
+* <b>Deuteranopia</b>
 
 ![Webapp seen with Deuteranopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor3.png "Webapp seen with Deuteranopia")
 
-<b>Deuteranomaly</b>
+* <b>Deuteranomaly</b>
 
 ![Webapp seen with Deuteranomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor4.png "Webapp seen with Deuteranomaly")
 
-<b>Tritanopia</b>
+* <b>Tritanopia</b>
 
 ![Webapp seen with Tritanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor5.png "Webapp seen with Tritanopia")
 
-<b>Tritanomaly</b>
+* <b>Tritanomaly</b>
 
 ![Webapp seen with Tritanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor6.png "Webapp seen with Tritanomaly")
 
-<b>Achromatopsia</b>
+* <b>Achromatopsia</b>
 
 ![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
 
-<b>Achromatomaly</b>
+* <b>Achromatomaly</b>
 
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor8.png "Webapp seen with Achromatomaly")
 
 <b>Low-Contrast</b>
 
-![Webapp seen with Low-Contrast](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Low-Contrast")
+* ![Webapp seen with Low-Contrast](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Low-Contrast")
 
-<b>Broadband internet</b>
+* <b>Broadband internet</b>
 
 Tested in chrome with slow 3G. Loader should be there already, not added with JS. CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
 
