@@ -99,9 +99,7 @@ Tested with the screenreader of macOS. Tabs work fine, but focus styles can be m
 
 ## Device lab testing
 * Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
-![Device lab 1](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test1.JPG "SDevice lab 1")
-![Device lab 2](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.JPG "SDevice lab 2")
-![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.JPG "SDevice lab 3")
+![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
 
 
 ## Changes
