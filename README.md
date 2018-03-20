@@ -17,7 +17,7 @@ Because there is a title above every image, The images itself don't need an alt 
 
 ### 2. Custom fonts
 
-No icon fonts are used and there is a fallback font used. Tested with the google chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts.
+No icon fonts are used and there is a fallback font used. This font will show when the custom font can't load or when custom fonts are disabled. I tested it to disabled custom fonts with the google chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts. With the extension you can replace the custom font with the desired system font like 'Arial'.
 
 ![Tested without custom font](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/customfonts.png "Tested without custom font")
 
@@ -29,7 +29,15 @@ No icon fonts are used and there is a fallback font used. Tested with the google
 
 ### 3. Javascript
 
-JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages.
+JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages. The solution could be to build the webapp in node.js. Call the API server side, handle and show the response through template engines. Then, the webapp should work without JavaScript.
+
+![Webapp without JavaScript](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/javascript.png "Webapp without JavaScript")
+
+<b>Conclusion</b>
+
+* Call the API server side so the webpage is available without JS.
+* Render pages server side so the routing works without JS.
+
 
 ### 4. Color
 
@@ -99,9 +107,7 @@ Tested with the screenreader of macOS. Tabs work fine, but focus styles can be m
 
 ## Device lab testing
 * Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
-![Device lab 1](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test1.JPG "SDevice lab 1")
-![Device lab 2](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.JPG "SDevice lab 2")
-![Device lab 3](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test3.JPG "SDevice lab 3")
+![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
 
 
 ## Changes
