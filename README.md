@@ -63,12 +63,16 @@ The webapp is really colorfull. To test if color blinds still see the contrast b
 
 ![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
 
-* <b>Achromatomaly</b> Weak complete color blindness
+* <b>Achromatomaly</b>: weak complete color blindness
 
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor8.png "Webapp seen with Achromatomaly")
 
+* <b>Low contrast</b>: computer with low contrast
+
+![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Achromatomaly")
+
 <b>Conclusion</b>
-The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness. 
+* The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness. 
  
 
 ### 5. Broadband internet
