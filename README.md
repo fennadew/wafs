@@ -26,27 +26,35 @@ In black and white everything is readable too.
 ![Webapp seen with Protanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor.png "Webapp seen with Protanopia")
 
 <b>Protanomaly</b>
+
 ![Webapp seen with Protanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor2.png "Webapp seen with Protanomaly")
 
 <b>Deuteranopia</b>
+
 ![Webapp seen with Deuteranopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor3.png "Webapp seen with Deuteranopia")
 
 <b>Deuteranomaly</b>
+
 ![Webapp seen with Deuteranomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor4.png "Webapp seen with Deuteranomaly")
 
 <b>Tritanopia</b>
+
 ![Webapp seen with Tritanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor5.png "Webapp seen with Tritanopia")
 
 <b>Tritanomaly</b>
+
 ![Webapp seen with Tritanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor6.png "Webapp seen with Tritanomaly")
 
 <b>Achromatopsia</b>
+
 ![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
 
 <b>Achromatomaly</b>
+
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor8.png "Webapp seen with Achromatomaly")
 
 <b>Low-Contrast</b>
+
 ![Webapp seen with Low-Contrast](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Low-Contrast")
 
 <b>Broadband internet</b>
