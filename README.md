@@ -3,7 +3,7 @@ The course repo for 'Web App From Scratch'
 
 [Link to website](http://fennadewilde.nl/wafs/index.html)
 
-## Research Progressive Enhancement features
+## Research 
 
 <b>Images</b>
 
@@ -22,6 +22,33 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 The colors have enough contrast. Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
 In black and white everything is readable too.
 
+<b>Protanopia</b>
+![Webapp seen with Protanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor.png "Webapp seen with Protanopia")
+
+<b>Protanomaly</b>
+![Webapp seen with Protanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor2.png "Webapp seen with Protanomaly")
+
+<b>Deuteranopia</b>
+![Webapp seen with Deuteranopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor3.png "Webapp seen with Deuteranopia")
+
+<b>Deuteranomaly</b>
+![Webapp seen with Deuteranomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor4.png "Webapp seen with Deuteranomaly")
+
+<b>Tritanopia</b>
+![Webapp seen with Tritanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor5.png "Webapp seen with Tritanopia")
+
+<b>Tritanomaly</b>
+![Webapp seen with Tritanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor6.png "Webapp seen with Tritanomaly")
+
+<b>Achromatopsia</b>
+![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
+
+<b>Achromatomaly</b>
+![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor8.png "Webapp seen with Achromatomaly")
+
+<b>Low-Contrast</b>
+![Webapp seen with Low-Contrast](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Low-Contrast")
+
 <b>Broadband internet</b>
 
 Tested in chrome with slow 3G. Loader should be there already, not added with JS. CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
@@ -39,10 +66,8 @@ Doens't use local storage.
 Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling.
 
 ## Accessibility research
-* Images need to have an alt attribute.
 * If the website gets more content/more complexity in the future, maybe place a skip to content button.
 * Heading is well stuctured.
-* Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
 * Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
 ![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
 * Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
