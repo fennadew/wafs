@@ -17,46 +17,45 @@ No icon fonts are used and there is a fallback font used. Works the same without
 
 JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages.
 
-### Color<
+### Color
 
-The colors have enough contrast. Tested with the google chrome extension Spectrum to test on all different types of color blindness. The website looks good with every type.
-In black and white everything is readable too.
+The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension Spectrum. The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
 
-* <b>Protanopia</b>
+* <b>Protanopia</b> Red-green color blindness
 
 ![Webapp seen with Protanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor.png "Webapp seen with Protanopia")
 
-* <b>Protanomaly</b>
+* <b>Protanomaly</b> Weak red-green color blindness
 
 ![Webapp seen with Protanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor2.png "Webapp seen with Protanomaly")
 
-* <b>Deuteranopia</b>
+* <b>Deuteranopia</b> Green color blindness
 
 ![Webapp seen with Deuteranopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor3.png "Webapp seen with Deuteranopia")
 
-* <b>Deuteranomaly</b>
+* <b>Deuteranomaly</b> Weak green color blindess
 
 ![Webapp seen with Deuteranomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor4.png "Webapp seen with Deuteranomaly")
 
-* <b>Tritanopia</b>
+* <b>Tritanopia</b> Blue-Yellow Color Blindness
 
 ![Webapp seen with Tritanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor5.png "Webapp seen with Tritanopia")
 
-* <b>Tritanomaly</b>
+* <b>Tritanomaly</b> Weak blue-Yellow Color Blindness
 
 ![Webapp seen with Tritanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor6.png "Webapp seen with Tritanomaly")
 
-* <b>Achromatopsia</b>
+* <b>Achromatopsia</b> Complete color blindness
 
 ![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
 
-* <b>Achromatomaly</b>
+* <b>Achromatomaly</b> Weak complete color blindness
 
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor8.png "Webapp seen with Achromatomaly")
 
-* <b>Low-Contrast</b>
-
-![Webapp seen with Low-Contrast](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Low-Contrast")
+<b>Conclusion</b>
+The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness. 
+ 
 
 ### Broadband internet
 
