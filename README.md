@@ -21,31 +21,31 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 
 The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension Spectrum. The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
 
-* <b>Protanopia</b> Red-green color blindness
+* <b>Protanopia</b>: red-green color blindness
 
 ![Webapp seen with Protanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor.png "Webapp seen with Protanopia")
 
-* <b>Protanomaly</b> Weak red-green color blindness
+* <b>Protanomaly</b>: weak red-green color blindness
 
 ![Webapp seen with Protanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor2.png "Webapp seen with Protanomaly")
 
-* <b>Deuteranopia</b> Green color blindness
+* <b>Deuteranopia</b>: green color blindness
 
 ![Webapp seen with Deuteranopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor3.png "Webapp seen with Deuteranopia")
 
-* <b>Deuteranomaly</b> Weak green color blindess
+* <b>Deuteranomaly</b>: weak green color blindess
 
 ![Webapp seen with Deuteranomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor4.png "Webapp seen with Deuteranomaly")
 
-* <b>Tritanopia</b> Blue-Yellow Color Blindness
+* <b>Tritanopia</b>: blue-Yellow Color Blindness
 
 ![Webapp seen with Tritanopia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor5.png "Webapp seen with Tritanopia")
 
-* <b>Tritanomaly</b> Weak blue-Yellow Color Blindness
+* <b>Tritanomaly</b>: weak blue-Yellow Color Blindness
 
 ![Webapp seen with Tritanomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor6.png "Webapp seen with Tritanomaly")
 
-* <b>Achromatopsia</b> Complete color blindness
+* <b>Achromatopsia</b>: complete color blindness
 
 ![Webapp seen with Achromatopsia](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor7.png "Webapp seen with Achromatopsia")
 
