@@ -5,7 +5,7 @@ The course repo for 'Web App From Scratch'
 
 ## Research 
 
-### Images
+### 1. Images
 The images are the main content of the webapp. It's a meme generator which generates memes (images). People who are blind could visit the webapp, but don't experience that much pleasure out of it. You could add a long description of how the image looks like, but I think that won't create the same "funny" effect. Memes are supposed to be funny. 
 
 Because there is a title above every image, The images itself don't need an alt attribute. The title will already tell where the image is about. If I would add an alt attribute with the same text as the title the screenreader would speak out the same text twice. 
@@ -15,7 +15,7 @@ Because there is a title above every image, The images itself don't need an alt 
 * Removed the alt attribute for better accessibility
 * Website would not be as fun without images
 
-### Custom fonts
+### 2. Custom fonts
 
 No icon fonts are used and there is a fallback font used. Tested with the google chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts.
 
@@ -27,11 +27,11 @@ No icon fonts are used and there is a fallback font used. Tested with the google
 * Don't use icon fonts.
 
 
-### Javascript
+### 3. Javascript
 
 JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages.
 
-### Color
+### 4. Color
 
 The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension Spectrum. The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
 
@@ -71,28 +71,26 @@ The webapp is really colorfull. To test if color blinds still see the contrast b
 The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness. 
  
 
-### Broadband internet
+### 5. Broadband internet
 
 Tested in chrome with slow 3G. Loader should be there already, not added with JS. CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
 
-### Cookies
+### 6. Cookies
 
 The websites doesn't use cookies. Cookies are in this case not really needed, because you don't need any user data and the content changes everyday. The website is also quit small.
 
-### Local Storage
+### 7. Local Storage
 
 Doens't use local storage.
 
-### Mouse/Trackpad
+### 8. Mouse/Trackpad
 
-Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling.
+Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button.
 
-## Accessibility research
-* If the website gets more content/more complexity in the future, maybe place a skip to content button.
-* Heading is well stuctured.
-* Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
 
 ## Screenreader test
+Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
+
 ![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
 
 ## Device lab testing
