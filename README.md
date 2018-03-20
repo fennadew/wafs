@@ -6,8 +6,13 @@ The course repo for 'Web App From Scratch'
 ## Research 
 
 ### Images
+The images are the main content of the webapp. It's a meme generator which generates memes (images). People who are blind could visit the webapp, but don't experience that much pleasure out of it. You could add a long description of how the image looks like, but I think that won't create the same "funny" effect. Memes are supposed to be funny. 
 
-Because I load the images in a template, I forgot about the alt attribute. I should use the title as an alt attribute for accesibility. There should also be a default background color for the logo title. (used a background clip)
+Because there is a title above every image, The images itself don't need an alt attribute. The title will already tell where the image is about. If I would add an alt attribute with the same text as the title the screenreader would speak out the same text twice. 
+
+<b>Conclusion</b>
+
+* Removed the alt attribute
 
 ### Custom fonts
 
