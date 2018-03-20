@@ -12,11 +12,20 @@ Because there is a title above every image, The images itself don't need an alt 
 
 <b>Conclusion</b>
 
-* Removed the alt attribute
+* Removed the alt attribute for better accessibility
+* Website would not be as fun without images
 
 ### Custom fonts
 
-No icon fonts are used and there is a fallback font used. Works the same without custom fonts.
+No icon fonts are used and there is a fallback font used. Tested with the google chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts.
+
+![Tested without custom font](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/customfonts.png "Tested without custom font")
+
+<b>Conclusion</b>
+
+* Website works fine without custom fonts.
+* Don't use icon fonts.
+
 
 ### Javascript
 
