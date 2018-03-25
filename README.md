@@ -3,7 +3,7 @@ The course repo for 'Web App From Scratch'
 
 [Link to website](http://fennadewilde.nl/wafs/index.html)
 
-## Feedback
+# Feedback
 | Feedback                | Verbetering              |
 | ----------------------- |:------------------------|
 | Research may be a bit more extensive | Expanded research, added conclusions, added more pictures of testing added links to resources. |
@@ -11,9 +11,9 @@ The course repo for 'Web App From Scratch'
 | Alt attributes are unnecessary when title says the same | Removed alt attributes |
 
 
-## Research 
+# Research
 
-### 1. Images
+## 1. Images
 The images are the main content of the webapp. It's a meme generator which generates memes (images). People who are blind could visit the webapp, but don't experience that much pleasure out of it. You could add a long description of how the image looks like, but I think that won't create the same "funny" effect. Memes are supposed to be funny. 
 
 Because there is a title above every image, The images itself don't need an alt attribute. The title will already tell where the image is about. If I would add an alt attribute with the same text as the title the screenreader would speak out the same text twice. 
@@ -22,7 +22,7 @@ Because there is a title above every image, The images itself don't need an alt 
 
 * Website would not be as fun without images
 
-### 2. Custom fonts
+## 2. Custom fonts
 
 No icon fonts are used and there is a fallback font used. This font will show when the custom font can't load or when custom fonts are disabled. I tested it to disabled custom fonts with the google chrome extension [force fonts](https://chrome.google.com/webstore/detail/force-font/iidenkflofaiinggabfmdjbomolidnie). Works the same without custom fonts. With the extension you can replace the custom font with the desired system font like 'Arial'.
 
@@ -34,13 +34,13 @@ No icon fonts are used and there is a fallback font used. This font will show wh
 * Don't use icon fonts.
 
 
-### 3. Javascript
+## 3. Javascript
 
 JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. I tested this with the [Google Chrome Web Developer extension](http://chrispederick.com/work/web-developer/). You can still see all the pages. The solution could be to build the webapp in node.js. Call the API server side, handle and show the response through template engines. Then, the webapp should work without JavaScript.
 
 ![Webapp without JavaScript](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/javascript.png "Webapp without JavaScript")
 
-<b>Conclusion</b>
+### Conclusion
 #### To do
 * Request the API server side so it can still work without JS.
 * Make different pages with links when JS is not working
@@ -48,9 +48,9 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 * Render pages server side so the routing works without JS.
 
 #### Done
-* Used transpiler (Babel)[https://babeljs.io/] and Package manager [Webpack](https://webpack.js.org/) to transpile JS so it works on older browsers as well.
+* Used transpiler [Babel](https://babeljs.io/) and Package manager [Webpack](https://webpack.js.org/) to transpile JS so it works on older browsers as well.
 
-### 4. Color
+## 4. Color
 
 The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension [Spectrum](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb). The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
 
@@ -90,11 +90,10 @@ The webapp is really colorfull. To test if color blinds still see the contrast b
 
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Achromatomaly")
 
-<b>Conclusion</b>
-
+### Conclusion
 * The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness.
 
-### 5. Broadband internet
+## 5. Broadband internet
 
 Tested in chrome with slow 3G. Loader should be there already, not added with JS. This is because the JavaScript takes some time to load when the internet connection is not that good. The loader is not showing so the user doesn't get feedback that the loading is happening. The loading time is 8.73 sec. This is still quite a lot so there can definitely be some improvement. As I said with JavaScript, server side rendering can improve the loading time. rendering with Node.js can be an improvement in the future.
 
@@ -102,29 +101,29 @@ CSS and JS are not minified. The files are already pretty small. But even small 
 
 ![Webapp Perfomance](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/performance.png "Perfomance")
 
-<b>Conclusion</b>
+### Conclusion
 #### To do
 * Loader should not be added in JS but should be in the HTML.
 * Minify the CSS and JS.
 * serverside rendering with Node.js can be an improvement.
 
-### 6. Cookies
+## 6. Cookies
 
 The websites doesn't use cookies. Cookies are in this case not really needed, because you don't need any user data and the content changes everyday. The website is also quit small.
 
-### 7. Local Storage
+## 7. Local Storage
 
 Doesn't use local storage. Could add localStorage, but there need to be some feature detection if localstorage is available, since localStorage is quite new. localStorage could improve the loading time after the first time.
 
-<b>Conclusion</b>
+### Conclusion
 #### To to
 * Make a feature detection for localStorage and use localstorage.
 
-### 8. Mouse/Trackpad
+## 8. Mouse/Trackpad
 
 Tabbing goes quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button. The focus stylte for the checkbox is not there. The screenreader does that for you, but should be there anyways.
 
-<b>Conclusion</b>
+### Conclusion
 #### To do
 * More "pleasurable" focus styles.
 
