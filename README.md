@@ -18,8 +18,7 @@ The images are the main content of the webapp. It's a meme generator which gener
 
 Because there is a title above every image, The images itself don't need an alt attribute. The title will already tell where the image is about. If I would add an alt attribute with the same text as the title the screenreader would speak out the same text twice. 
 
-<b>Conclusion</b>
-
+###Conclusion
 * Website would not be as fun without images
 
 #### Done
@@ -31,8 +30,7 @@ No icon fonts are used and there is a fallback font used. This font will show wh
 
 ![Tested without custom font](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/customfonts.png "Tested without custom font")
 
-<b>Conclusion</b>
-
+###
 * Website works fine without custom fonts.
 * Don't use icon fonts.
 
