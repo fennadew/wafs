@@ -22,7 +22,7 @@ Because there is a title above every image, The images itself don't need an alt 
 * Website would not be as fun without images
 
 #### Done
-* Removed alt unnecessary attributes
+* Removed unnecessary alt attributes
 
 ## 2. Custom fonts
 
