@@ -89,7 +89,7 @@ Tested in chrome with slow 3G. Loader should be there already, not added with JS
 
 CSS and JS are not minified. The files are already pretty small. But even small changes can help to improve the perfomance. Should definitely give it a try and see if the perfomance will be better.  
 
-![Webapp Perfomance](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/perfomance.png "Perfomance")
+![Webapp Perfomance](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/performance.png "Perfomance")
 
 <b>Conclusion</b>
 * Loader should not be added in JS but should be in the HTML.
