@@ -29,9 +29,6 @@ export const content = {
             image: {
                 src(params) {
                     return this.imageUrl
-                },
-                alt(params) {
-                    return this.displayName
                 }
             }
         }

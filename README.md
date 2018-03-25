@@ -3,6 +3,14 @@ The course repo for 'Web App From Scratch'
 
 [Link to website](http://fennadewilde.nl/wafs/index.html)
 
+## Feedback
+| Feedback                | Verbetering              |
+| ----------------------- |:------------------------|
+| Research may be a bit more extensive | Expanded research, added conclusions and added more pictures of testing. |
+| Pictures for testing color blindness | Pictures added of all tests |
+| Alt attributes are unnecessary when title says the same | Removed alt attributes |
+
+
 ## Research 
 
 ### 1. Images
