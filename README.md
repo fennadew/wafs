@@ -29,7 +29,7 @@ No icon fonts are used and there is a fallback font used. This font will show wh
 
 ### 3. Javascript
 
-JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. You can still see all the pages. The solution could be to build the webapp in node.js. Call the API server side, handle and show the response through template engines. Then, the webapp should work without JavaScript.
+JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. I tested this with the [Google Chrome Web Developer extension](http://chrispederick.com/work/web-developer/). You can still see all the pages. The solution could be to build the webapp in node.js. Call the API server side, handle and show the response through template engines. Then, the webapp should work without JavaScript.
 
 ![Webapp without JavaScript](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/javascript.png "Webapp without JavaScript")
 
@@ -41,7 +41,7 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 
 ### 4. Color
 
-The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension Spectrum. The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
+The webapp is really colorfull. To test if color blinds still see the contrast between the used colors, I used  google chrome extension [Spectrum](https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb). The extension contains 9 different types of color blindness. Underneath you can see the website tested on all types.
 
 * <b>Protanopia</b>: red-green color blindness
 
@@ -121,6 +121,7 @@ Tested with the screenreader of macOS. Tabs work fine, but focus styles can be m
 
 ## Device lab testing
 * Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
+
 ![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
 
 
