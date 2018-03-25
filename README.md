@@ -6,7 +6,7 @@ The course repo for 'Web App From Scratch'
 ## Feedback
 | Feedback                | Verbetering              |
 | ----------------------- |:------------------------|
-| Research may be a bit more extensive | Expanded research, added conclusions and added more pictures of testing. |
+| Research may be a bit more extensive | Expanded research, added conclusions, added more pictures of testing added links to resources. |
 | Pictures for testing color blindness | Pictures added of all tests |
 | Alt attributes are unnecessary when title says the same | Removed alt attributes |
 
@@ -20,7 +20,6 @@ Because there is a title above every image, The images itself don't need an alt 
 
 <b>Conclusion</b>
 
-* Removed the alt attribute for better accessibility
 * Website would not be as fun without images
 
 ### 2. Custom fonts
@@ -42,10 +41,14 @@ JavaScript should be enabled, because the whole site is based on an API. Turning
 ![Webapp without JavaScript](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/javascript.png "Webapp without JavaScript")
 
 <b>Conclusion</b>
-
+#### To do
+* Request the API server side so it can still work without JS.
+* Make different pages with links when JS is not working
 * Call the API server side so the webpage is available without JS.
 * Render pages server side so the routing works without JS.
 
+#### Done
+* Used transpiler (Babel)[https://babeljs.io/] and Package manager [Webpack](https://webpack.js.org/) to transpile JS so it works on older browsers as well.
 
 ### 4. Color
 
@@ -88,8 +91,8 @@ The webapp is really colorfull. To test if color blinds still see the contrast b
 ![Webapp seen with Achromatomaly](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/testcolor9.png "Webapp seen with Achromatomaly")
 
 <b>Conclusion</b>
-* The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness. 
- 
+
+* The contrast of the colors are still visible with all types of color blindness. Therefore, the used colors are appropriate for color blindness.
 
 ### 5. Broadband internet
 
@@ -100,6 +103,7 @@ CSS and JS are not minified. The files are already pretty small. But even small 
 ![Webapp Perfomance](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/performance.png "Perfomance")
 
 <b>Conclusion</b>
+#### To do
 * Loader should not be added in JS but should be in the HTML.
 * Minify the CSS and JS.
 * serverside rendering with Node.js can be an improvement.
@@ -113,6 +117,7 @@ The websites doesn't use cookies. Cookies are in this case not really needed, be
 Doesn't use local storage. Could add localStorage, but there need to be some feature detection if localstorage is available, since localStorage is quite new. localStorage could improve the loading time after the first time.
 
 <b>Conclusion</b>
+#### To to
 * Make a feature detection for localStorage and use localstorage.
 
 ### 8. Mouse/Trackpad
@@ -120,7 +125,11 @@ Doesn't use local storage. Could add localStorage, but there need to be some fea
 Tabbing goes quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button. The focus stylte for the checkbox is not there. The screenreader does that for you, but should be there anyways.
 
 <b>Conclusion</b>
-* Make an focus style for input checkbox
+#### To do
+* More "pleasurable" focus styles.
+
+#### Done
+* Made an focus style for input checkbox
 
 ## Screenreader test
 Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
@@ -132,17 +141,6 @@ Tested with the screenreader of macOS. Tabs work fine, but focus styles can be m
 
 ![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
 
-
-## Changes
-* Used transpiler Babel and Package manager Webpack to transpile JS so it works on older browsers as well.
-* Added alt attributes on the images
-
-## Future
-* Request the API server side so it can still work without JS.
-* More "pleasurable" focus styles.
-* Minify CSS and JS.
-* Use local storage with API's.
-* Make different pages with links when JS is not working
 
 ## The SPA (Single Page Application)
 My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.

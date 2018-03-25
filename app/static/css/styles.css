@@ -274,6 +274,10 @@ figcaption {
     padding-left: 1.5em;
 }
 
+.sort input[type="checkbox"] + label:focus {
+    color: #FF005C;
+}
+
 .sort input[type="checkbox"] + label:before {
     content: "";
     position: absolute;
