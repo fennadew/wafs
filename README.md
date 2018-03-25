@@ -85,7 +85,16 @@ The webapp is really colorfull. To test if color blinds still see the contrast b
 
 ### 5. Broadband internet
 
-Tested in chrome with slow 3G. Loader should be there already, not added with JS. CSS and JS are not minified. The files are already pretty small. There is also feedback that the site is loading or if the connection is not working.
+Tested in chrome with slow 3G. Loader should be there already, not added with JS. This is because the JavaScript takes some time to load when the internet connection is not that good. The loader is not showing so the user doesn't get feedback that the loading is happening. The loading time is 8.73 sec. This is still quite a lot so there can definitely be some improvement. As I said with JavaScript, server side rendering can improve the loading time. rendering with Node.js can be an improvement in the future.
+
+CSS and JS are not minified. The files are already pretty small. But even small changes can help to improve the perfomance. Should definitely give it a try and see if the perfomance will be better.  
+
+<b>Conclusion</b>
+* Loader should not be added in JS but should be in the HTML.
+* Minify the CSS and JS.
+* serverside rendering with Node.js can be an improvement.
+
+
 
 ### 6. Cookies
 
