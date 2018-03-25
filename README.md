@@ -1,12 +1,12 @@
 # wafs
 The course repo for 'Web App From Scratch'
 
-[Link to website](http://fennadewilde.nl/wafs/index.html)
+[Link to website](http://fennadewilde.nl/wafs/app/index.html)
 
 # Feedback
 | Feedback                | Verbetering              |
 | ----------------------- |:------------------------|
-| Research may be a bit more extensive | Expanded research, added conclusions, added more pictures of testing added links to resources. |
+| Research may be a bit more extensive | Expanded research, added conclusions, added more pictures of testing, added links to resources. |
 | Pictures for testing color blindness | Pictures added of all tests |
 | Alt attributes are unnecessary when title says the same | Removed alt attributes |
 
@@ -21,6 +21,9 @@ Because there is a title above every image, The images itself don't need an alt 
 <b>Conclusion</b>
 
 * Website would not be as fun without images
+
+#### Done
+* Removed alt unnecessary attributes
 
 ## 2. Custom fonts
 
@@ -39,6 +42,10 @@ No icon fonts are used and there is a fallback font used. This font will show wh
 JavaScript should be enabled, because the whole site is based on an API. Turning off JavaScript wouldn't give any content unless the page is already loaded. I tested this with the [Google Chrome Web Developer extension](http://chrispederick.com/work/web-developer/). You can still see all the pages. The solution could be to build the webapp in node.js. Call the API server side, handle and show the response through template engines. Then, the webapp should work without JavaScript.
 
 ![Webapp without JavaScript](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/javascript.png "Webapp without JavaScript")
+
+* Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working. Should still use a transpiler to transpile JavaScript for older browsers.
+
+![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
 
 ### Conclusion
 #### To do
@@ -123,23 +130,16 @@ Doesn't use local storage. Could add localStorage, but there need to be some fea
 
 Tabbing goes quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button. The focus stylte for the checkbox is not there. The screenreader does that for you, but should be there anyways.
 
+Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
+
+![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
+
 ### Conclusion
 #### To do
 * More "pleasurable" focus styles.
 
 #### Done
 * Made an focus style for input checkbox
-
-## Screenreader test
-Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
-
-![Screen reader](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/screenreader.png "Screen reader")
-
-## Device lab testing
-* Tested in device lab. Works well on mobile devices. Only JavaScript on kindle is not working.
-
-![Device lab testing](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/test2.png "Device lab testing")
-
 
 ## The SPA (Single Page Application)
 My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
