@@ -89,12 +89,12 @@ Tested in chrome with slow 3G. Loader should be there already, not added with JS
 
 CSS and JS are not minified. The files are already pretty small. But even small changes can help to improve the perfomance. Should definitely give it a try and see if the perfomance will be better.  
 
+![Webapp Perfomance](https://github.com/fennadew/wafs/blob/browser_technologies/app/static/images/perfomance.png "Perfomance")
+
 <b>Conclusion</b>
 * Loader should not be added in JS but should be in the HTML.
 * Minify the CSS and JS.
 * serverside rendering with Node.js can be an improvement.
-
-
 
 ### 6. Cookies
 
@@ -102,12 +102,17 @@ The websites doesn't use cookies. Cookies are in this case not really needed, be
 
 ### 7. Local Storage
 
-Doens't use local storage.
+Doesn't use local storage. Could add localStorage, but there need to be some feature detection if localstorage is available, since localStorage is quite new. localStorage could improve the loading time after the first time.
+
+<b>Conclusion</b>
+* Make a feature detection for localStorage and use localstorage.
 
 ### 8. Mouse/Trackpad
 
-Tabbing goed quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button.
+Tabbing goes quit easily. It's just not really "pleasurable". Focus elements could use some custom styling. If the website gets more content/more complexity in the future, maybe place a skip to content button. The focus stylte for the checkbox is not there. The screenreader does that for you, but should be there anyways.
 
+<b>Conclusion</b>
+* Make an focus style for input checkbox
 
 ## Screenreader test
 Tested with the screenreader of macOS. Tabs work fine, but focus styles can be more pleasurable.
