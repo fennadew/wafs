@@ -27,13 +27,6 @@
         <p>On this webapp 12 new memes are shown on every day of the week.<span> Enjoy!</span></p>
     </section>
 
-    <div class="loader">
-        <img src="static/images/loader.svg" alt="loader">
-    </div>
-    <div class="error">
-        <p><span>Whoops!</span> Something went wrong with getting your daily portion or memes. Check your internet
-                         connection or try again later.</p>
-    </div>
     <section id="memes">
         <div class="sort">
             <input type="checkbox" id="alphabethic"><label for="alphabethic">Sort Alphabetically</label>
@@ -41,6 +34,13 @@
         <ol id="memeslist">
             <li><a data-bind="displayName"></a></li>
         </ol>
+        <div class="loader active">
+            <img src="static/images/loader.svg" alt="loader">
+        </div>
+        <div class="error">
+            <p><span>Whoops!</span> Something went wrong with getting your daily portion or memes. Check your internet
+                             connection or try again later.</p>
+        </div>
     </section>
 
     <section id="details">

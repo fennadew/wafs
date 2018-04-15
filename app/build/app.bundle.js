@@ -9738,7 +9738,6 @@ var _routes = __webpack_require__(334);
 
     var app = {
         init: function init() {
-            _sections.sections.toggle('home');
             _routes.routes.init();
         }
     };
@@ -10396,17 +10395,16 @@ var api = exports.api = {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                _helpers.helpers.htmlElement('.loader').classList.add('active');
-                                _context.prev = 1;
-                                _context.next = 4;
+                                _context.prev = 0;
+                                _context.next = 3;
                                 return fetch(reqSettings);
 
-                            case 4:
+                            case 3:
                                 response = _context.sent;
-                                _context.next = 7;
+                                _context.next = 6;
                                 return response.json();
 
-                            case 7:
+                            case 6:
                                 data = _context.sent;
 
 
@@ -10427,23 +10425,23 @@ var api = exports.api = {
                                         _content.content.listPage();
                                     }
 
-                                _context.next = 18;
+                                _context.next = 17;
                                 break;
 
-                            case 14:
-                                _context.prev = 14;
-                                _context.t0 = _context["catch"](1);
+                            case 13:
+                                _context.prev = 13;
+                                _context.t0 = _context["catch"](0);
 
                                 // Error handler shows message in the DOM that the API request failed
                                 _helpers.helpers.htmlElement('.loader').classList.remove('active');
                                 _helpers.helpers.htmlElement('.error').classList.add('active');
 
-                            case 18:
+                            case 17:
                             case "end":
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this, [[1, 14]]);
+                }, _callee, _this, [[0, 13]]);
             }));
 
             return function request() {

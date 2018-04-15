@@ -15,7 +15,6 @@ export const api = {
         });
 
         const request = async () => {
-            helpers.htmlElement('.loader').classList.add('active')
             try {
                 // Success handler
                 const response = await fetch(reqSettings);

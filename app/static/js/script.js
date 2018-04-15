@@ -5,7 +5,6 @@ import {routes} from "./modules/routes";
     'use strict';
     const app = {
         init() {
-            sections.toggle('home')
             routes.init()
         }
     }
