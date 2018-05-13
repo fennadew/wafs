@@ -10381,7 +10381,7 @@ var api = exports.api = {
     requestApi: function requestApi(name) {
         var _this = this;
 
-        var reqSettings = new Request('https://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=' + this.pageNumberByDay + '&pageSize=12&days=&apiKey=' + this.apiKey, {
+        var reqSettings = new Request('http://version1.api.memegenerator.net//Generators_Select_ByPopular?pageIndex=' + this.pageNumberByDay + '&pageSize=12&days=&apiKey=' + this.apiKey, {
             method: 'get',
             headers: new Headers({
                 'Content-Type': 'text/plain'
