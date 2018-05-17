@@ -7,7 +7,7 @@ export const api = {
     apiKey: '893dfe6c-e0e7-4693-8a9e-5df5de998357',
     pageNumberByDay: new Date().getDay(),
     requestApi(name) {
-        const reqSettings = new Request('https://apifenna.casburggraaf.com//Generators_Select_ByPopular?pageIndex=' + this.pageNumberByDay + '&pageSize=12&days=&apiKey=' + this.apiKey, {
+        const reqSettings = new Request('https://apifenna.casburggraaf.com/Generators_Select_ByPopular?pageIndex=' + this.pageNumberByDay + '&pageSize=12&days=&apiKey=' + this.apiKey, {
             method: 'get',
             headers: new Headers({
                 'Content-Type': 'text/plain'
