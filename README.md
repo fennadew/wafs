@@ -7,7 +7,7 @@ The course repo for 'Web App From Scratch'
 ## The SPA (Single Page Application)
 My SPA is called "daily meme's". As the name suggests, it is a website that shows 12 new memes every day. It's a small website with the list of the meme's of that day and the links to the detail page of every meme. The detail page shows the meme and the title of the meme.
 
-![Preview of meme](https://github.com/fennadew/wafs/blob/master/app/static/images/cat.png "Preview of meme")
+![Preview of meme](https://github.com/fennadew/wafs/blob/master/static/images/cat.png "Preview of meme")
 
 ## The API 
 I am using the [Meme Generator API](http://version1.api.memegenerator.net/). I call the most populair memes by the method Generators_Select_ByPopular. This returns the most populair memes. The API has different parameters explained on the website.
@@ -41,13 +41,13 @@ I used the default for pageSize and have a variable for the pageIndex based on t
 
 
 ## Actor diagram
-![Actor diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/actor-diagram.svg "Actor diagram")
+![Actor diagram](https://github.com/fennadew/wafs/blob/master/static/images/actor-diagram.svg "Actor diagram")
 
 ## Flow diagram
-![Flow diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/flow-diagram.svg "Flow diagram")
+![Flow diagram](https://github.com/fennadew/wafs/blob/master/static/images/flow-diagram.svg "Flow diagram")
 
 ## Interaction diagram
-![Interaction diagram](https://github.com/fennadew/wafs/blob/master/app/static/images/interaction-diagram.png "Interaction diagram")
+![Interaction diagram](https://github.com/fennadew/wafs/blob/master/static/images/interaction-diagram.png "Interaction diagram")
 
 ## Advantages and disadvantages of JavaScript libraries/frameworks
  ### Advantages
